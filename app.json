@@ -1,0 +1,42 @@
+{
+  "expo": {
+    "name": "Map App Framework",
+    "slug": "map-app-framework",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "scheme": "mapapp",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "resizeMode": "contain",
+      "backgroundColor": "#f5f7fb"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "用于在地图中定位你的当前位置"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#f5f7fb"
+      },
+      "permissions": [
+        "CAMERA",
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "用于选择建筑图片进行智能识别",
+          "cameraPermission": "用于拍摄建筑照片进行智能识别"
+        }
+      ]
+    ],
+    "extra": {
+      "mapProvider": "gaode"
+    }
+  }
+}
